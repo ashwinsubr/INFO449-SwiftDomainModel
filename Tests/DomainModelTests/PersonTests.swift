@@ -7,6 +7,11 @@ class PersonTests: XCTestCase {
         let ted = Person(firstName: "Ted", lastName: "Neward", age: 45)
         XCTAssert(ted.toString() == "[Person: firstName:Ted lastName:Neward age:45 job:nil spouse:nil]")
     }
+    
+    func testBeyonce() {
+        let beyonce = Person(firstName: "Beyonce", age: 41)
+        XCTAssert(beyonce.toString() == "[Person: firstName:Beyonce lastName: age:41 job:nil spouse:nil]")
+    }
 
     func testAgeRestrictions() {
         let matt = Person(firstName: "Matthew", lastName: "Neward", age: 15)
